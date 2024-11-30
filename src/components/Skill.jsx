@@ -1,16 +1,24 @@
 import SkillCard from "./SkillCard"
 
 const skillItem = [
-    {
-      imgSrc: '/images/figma.svg',
-      label: 'Figma',
-      desc: 'Design tool'
-    },
+  {
+    imgSrc: '/images/html.png',
+    label: 'HTML',
+    desc: 'User Interface'
+  },
+
     {
       imgSrc: '/images/css3.svg',
       label: 'CSS',
       desc: 'User Interface'
     },
+
+    {
+      imgSrc: '/images/figma.svg',
+      label: 'Figma',
+      desc: 'Design tool'
+    },
+
     {
       imgSrc: '/images/javascript.svg',
       label: 'JavaScript',
@@ -41,11 +49,81 @@ const skillItem = [
       label: 'TailwindCSS',
       desc: 'User Interface'
     },
+
+    {
+      imgSrc: '/images/typescript.svg',
+      label: 'Typescript',
+      desc: 'User Interface'
+    },
+
     {
         imgSrc: '/images/photshop.png',
       label: 'Photoshop',
       desc: 'Design tool'
-    }
+    },
+
+    {
+      imgSrc: '/images/ai.svg',
+      label: 'Illustrator ',
+      desc: 'Design tool'
+    },
+    {
+      imgSrc: '/images/java.png',
+      label: 'Java ',
+      desc: 'Language'
+    },
+
+    {
+      imgSrc: '/images/linux.svg',
+      label: 'Linux ',
+      desc: 'platform '
+    },
+
+    {
+      imgSrc: '/images/kotlin.svg',
+      label: 'Kotlin ',
+      desc: 'Language '
+    },
+
+    {
+      imgSrc: '/images/sql.svg',
+      label: 'MySQL ',
+      desc: 'Database'
+    },
+
+    {
+      imgSrc: '/images/csharp.png',
+      label: 'C# ',
+      desc: 'Language'
+    },
+
+    {
+      imgSrc: '/images/cplus.png',
+      label: 'C++ ',
+      desc: 'Language'
+    },
+
+    {
+      imgSrc: '/images/php.svg',
+      label: 'Php',
+      desc: 'Language'
+    },
+
+    {
+      imgSrc: '/images/apache.svg',
+      label: 'Apache',
+      desc: 'Web Server'
+    },
+
+    {
+      imgSrc: '/images/python.svg',
+      label: 'Python',
+      desc: 'Language'
+    },
+
+
+
+
   ];
 const Skill = () => {
   return (
