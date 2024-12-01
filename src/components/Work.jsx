@@ -11,7 +11,7 @@ const works = [
       imgSrc: '/images/project-2.jpg',
       title: 'Financial App',
       tags: ['API', 'FIREBASE'],
-      projectLink: 'https://pixstock-official.vercel.app/'
+      projectLink: 'https://github.com/sithumbuddhika2002/Finance-App.git'
     },
     {
       imgSrc: '/images/project-3.jpg',
