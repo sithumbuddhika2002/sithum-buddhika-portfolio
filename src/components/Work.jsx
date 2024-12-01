@@ -3,39 +3,39 @@ import ProjectCard from "./ProjectCard";
 const works = [
     {
       imgSrc: '/images/project-1.jpg',
-      title: 'Full stack music app',
+      title: 'Full stack Food Ordering System',
       tags: ['API', 'MVC', 'Development'],
-      projectLink: 'https://musify-5al0.onrender.com/'
+      projectLink: 'https://github.com/sithumbuddhika2002/Online-Food-Ordering_System.git'
     },
     {
       imgSrc: '/images/project-2.jpg',
-      title: 'Free stock photo app',
-      tags: ['API', 'SPA'],
+      title: 'Financial App',
+      tags: ['API', 'FIREBASE'],
       projectLink: 'https://pixstock-official.vercel.app/'
     },
     {
       imgSrc: '/images/project-3.jpg',
-      title: 'Recipe app',
+      title: 'Vaccination Portal',
       tags: ['Development', 'API'],
-      projectLink: ''
+      projectLink: 'https://github.com/sithumbuddhika2002/IWT-project.git'
     },
     {
       imgSrc: '/images/project-4.jpg',
-      title: 'Real state website',
-      tags: ['Web-design', 'Development'],
-      projectLink: 'https://github.com/codewithsadee-org/wealthome'
+      title: 'Medi Mingle App',
+      tags: ['Android', 'Shared Preferences'],
+      projectLink: 'https://github.com/sithumbuddhika2002/Medi-Mingle-App.git'
     },
     {
       imgSrc: '/images/project-5.jpg',
-      title: 'eCommerce website',
-      tags: ['eCommerce', 'Development'],
-      projectLink: 'https://github.com/codewithsadee/anon-ecommerce-website'
+      title: 'Travel App',
+      tags: ['Figma', 'Development'],
+      projectLink: ''
     },
     {
       imgSrc: '/images/project-6.jpg',
-      title: 'vCard Personal portfolio',
+      title: 'Property Management',
       tags: ['Web-design', 'Development'],
-      projectLink: 'https://github.com/codewithsadee/vcard-personal-portfolio'
+      projectLink: 'https://github.com/sithumbuddhika2002/Online-property-management.git'
     },
   ];
 const Work = () => {
