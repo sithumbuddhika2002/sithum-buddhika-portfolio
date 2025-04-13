@@ -1,81 +1,114 @@
 import { ButtonPrimary } from "./Button";
 
 const sitemap = [
-  { label: "Home", href: "#home" },
-  { label: "About", href: "#about" },
-  { label: "Skills", href: "#skills" },
-  { label: "Work", href: "#work" },
-  { label: "Contact", href: "#contact" },
-];
-
-const socials = [
-  { label: "GitHub", href: "https://github.com/sithumbuddhika2002" },
-  {
-    label: "LinkedIn",
-    href: "https://www.linkedin.com/in/sithum-buddhika-764192311",
-  },
-  { label: "Twitter X", href: "https://x.com/sithum_buddhika" },
-  { label: "Instagram", href: "https://www.instagram.com/_sithum_buddhika_" },
-];
-
+    {
+      label: 'Home',
+      href: '#home'
+    },
+    {
+      label: 'About',
+      href: '#about'
+    },
+    {
+      label: 'Work',
+      href: '#work'
+    },
+    {
+      label: 'Reviews',
+      href: '#reviews'
+    },
+    {
+      label: 'Contact me',
+      href: '#contact'
+    }
+  ];
+  
+  const socials = [
+    {
+      label: 'GitHub',
+      href: 'https://github.com/sithumbuddhika2002'
+    },
+    {
+      label: 'LinkedIn',
+      href: 'https://www.linkedin.com/in/sithum-buddhika-764192311'
+    },
+    {
+      label: 'Twitter X',
+      href: 'https://x.com'
+    },
+    {
+      label: 'Instagram',
+      href: 'https://www.instagram.com/_sithum_buddhika_'
+    },
+    {
+      label: 'Focus Eye',
+      href: 'https://sites.google.com/view/focus-eye/home'
+    }
+  ];
 const Footer = () => {
   return (
-    <footer className="section bg-zinc-900/80 backdrop-blur-md">
-      <div className="container">
-        <div className="lg:grid lg:grid-cols-2 lg:gap-12">
-          <div className="mb-10 reveal-up">
-            <h2 className="headline-2 mb-6">Ready to Start?</h2>
-            <ButtonPrimary
-              href="mailto:sithumpersonal2002@gmail.com"
-              label="Get in Touch"
-              icon="chevron_right"
-            />
-          </div>
-          <div className="grid grid-cols-2 gap-8">
-            <div className="reveal-up">
-              <p className="text-zinc-200 font-medium mb-4">Sitemap</p>
-              <ul>
-                {sitemap.map(({ label, href }, key) => (
-                  <li key={key}>
-                    <a
-                      href={href}
-                      className="block text-sm text-zinc-400 py-1 hover:text-zinc-100 transition-colors"
-                    >
-                      {label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="reveal-up">
-              <p className="text-zinc-200 font-medium mb-4">Connect</p>
-              <ul>
-                {socials.map(({ label, href }, key) => (
-                  <li key={key}>
-                    <a
-                      href={href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block text-sm text-zinc-400 py-1 hover:text-zinc-100 transition-colors"
-                    >
-                      {label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="flex items-center justify-between pt-12 pb-8 text-sm text-zinc-400 reveal-up">
-          <a href="/" className="flex items-center gap-2">
-            <img src="/images/logo.svg" width={32} height={32} alt="Logo" />
-            <span>Sithum Buddhika</span>
-          </a>
-          <p>&copy; 2025 Sithum Buddhika. All rights reserved.</p>
-        </div>
-      </div>
-    </footer>
-  );
-};
+    <footer className="section">
+        <div className="container">
+            <div className="lg:grid lg:grid-cols-2">
+                <div className="mb-10">
+                    <h2 className="headline-1 mb-8 lg:max-w-[12ch]">
+                        Let&apos;s work together today!
+                    </h2>
 
-export default Footer;
+                    <ButtonPrimary href="mailto:sithumpersonal2002@gmail.com" label="Start Project" icon="chevron_right">
+
+                    </ButtonPrimary>
+                </div>
+
+                <div className="grid grid-cols-2 gap-4 lg:pl-20">
+                    <div>
+                        <p className="mb-2">
+                            sitemap
+                        </p>
+
+                        <ul>
+                            {sitemap.map(({ label ,href} ,key) => (
+                                <li key={key}>
+                                    <a href={href} className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200">
+                                        {label}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+
+                    <div>
+                        <p className="mb-2">
+                            Socials
+                        </p>
+
+                        <ul>
+                            {socials.map(({ label ,href} ,key) => (
+                                <li key={key}>
+                                    <a href={href} target="_blank" className="block text-sm text-zinc-400 py-1 transition-colors hover:text-zinc-200">
+                                        {label}
+                                    </a>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="flex items-center justify-between pt-10 mb-8">
+                <a href="" className="">
+                    <img src="/images/logo.svg" width={40} height={40} alt="Log" />
+                </a>
+
+                <p className="text-zinc-500 text-sm">
+                    &copy; 2024 <span className="text-zinc-200">
+                        Sithum_Buddhika
+                    </span>
+                </p>
+            </div>
+        </div>
+    </footer>
+  )
+}
+
+export default Footer
