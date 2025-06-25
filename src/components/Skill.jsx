@@ -62,6 +62,12 @@ const skillItem = [
       desc: 'Design tool'
     },
 
+        {
+        imgSrc: '/images/Lightroom.svg',
+      label: 'Lightroom',
+      desc: 'Design tool'
+    },
+
     {
       imgSrc: '/images/ai.svg',
       label: 'Illustrator ',
@@ -98,7 +104,7 @@ const skillItem = [
     },
 
     {
-      imgSrc: '/images/cplus.png',
+      imgSrc: '/images/cplus.svg',
       label: 'C++ ',
       desc: 'Language'
     },
@@ -120,6 +126,36 @@ const skillItem = [
       label: 'Python',
       desc: 'Language'
     },
+
+        {
+      imgSrc: '/images/android.svg',
+      label: 'Android Studio',
+      desc: 'IDE'
+    },
+
+            {
+      imgSrc: '/images/Xcode.svg',
+      label: 'Xcode',
+      desc: 'IDE'
+    },
+
+                {
+      imgSrc: '/images/Swift.svg',
+      label: 'Swift',
+      desc: 'Language'
+    },
+
+                    {
+      imgSrc: '/images/Fedora.svg',
+      label: 'Fedora',
+      desc: 'Platform'
+    },
+
+                        {
+      imgSrc: '/images/CentOS.svg',
+      label: 'CentOS',
+      desc: 'Platform'
+    }
 
 
 
