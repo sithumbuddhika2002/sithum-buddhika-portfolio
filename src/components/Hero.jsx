@@ -1,49 +1,84 @@
-import React from 'react'
-
-import { ButtonPrimary , ButtonOutline } from './Button'
+// Hero.jsx
+import React from 'react';
+import { motion } from 'framer-motion';
+import { ButtonPrimary, ButtonOutline } from './Button';
 
 const Hero = () => {
   return (
-    <section id="home" className="pt-28 lg:pt-36">
-        <div className="container items-center lg:grid lg:grid-cols-2 lg:gap-10">
-            <div>
-                <div className="flex items-center gap-3">
-                    <figure className="img-box w-9 h-9 rounded-lg">
-                        <img src="/images/avatar-1.jpg" width={40}
-                        height={40} alt="sithum buddhika portrait"
-                        className="img-cover" />
-                    </figure>
-
-                    <div className="flex items-center gap-1.5 text-zinc-400 
-                    text-sm tracking-wide">
-                        <span className="relative w-2 h-2 rounded-full bg-emerald-400
-                        animate-ping">
-                            <span className=''>
-                            </span>
-                        </span>
-                        Available for work
-                    </div>
-                </div>
-                <h2 className="headline-1 max-w-[15ch] sm:max-w-[20ch] lg:max-w-[15ch] mt-5 mb-8 lg:mb-10">
-                    Building Scalable Modern Websites for the Future
-                </h2>
-
-                <div className="flex items-center gap-3">
-                    <ButtonPrimary label="Download CV" icon="download" href="/sithum_buddhika_cv.pdf" />
-
-                    <ButtonOutline href="#about" label="Scroll down" icon="arrow_downward"/>
-                </div>
+    <motion.section
+      id="home"
+      className="pt-32 lg:pt-44"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+    >
+      <div className="container items-center lg:grid lg:grid-cols-2 lg:gap-12">
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+        >
+          <div className="flex items-center gap-4">
+            <motion.figure
+              className="img-box w-12 h-12 rounded-full overflow-hidden border-2 border-sky-400"
+              whileHover={{ scale: 1.1 }}
+            >
+              <img
+                src="/images/avatar-1.jpg"
+                width={48}
+                height={48}
+                alt="Sithum Buddhika portrait"
+                className="img-cover"
+              />
+            </motion.figure>
+            <div className="flex items-center gap-2 text-zinc-300 text-sm font-medium">
+              <motion.span
+                className="relative w-3 h-3 rounded-full bg-emerald-400"
+                animate={{ scale: [1, 1.2, 1] }}
+                transition={{ repeat: Infinity, duration: 2 }}
+              />
+              Available for work
             </div>
-            <div className="hidden lg:block">
-                <figure className="w-full max-w-[480px] ml-auto bg-gradient-to-t
-                from-sky-400 via-25% via-sky-400">
-                    <img src="/images/hero-banner.png" width={656}
-                    height={800} alt="sithum buddhika" className="" />
-                </figure>
-            </div>
-        </div>
-    </section>
-  )
-}
+          </div>
+          <motion.h2
+            className="headline-1 max-w-[20ch] mt-6 mb-10 lg:mb-12"
+            initial={{ y: 20, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+          >
+            Building Scalable Modern Websites for the Future
+          </motion.h2>
+          <div className="flex items-center gap-4">
+            <ButtonPrimary label="Download CV" icon="download" href="/sithum_buddhika_cv.pdf" />
+            <ButtonOutline href="#about" label="Scroll down" icon="arrow_downward" />
+          </div>
+        </motion.div>
+        <motion.div
+          className="hidden lg:block"
+          initial={{ x: 100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          <figure className="w-full max-w-[520px] ml-auto relative">
+            <motion.img
+              src="/images/hero-banner.png"
+              width={656}
+              height={800}
+              alt="Sithum Buddhika"
+              className="relative z-10"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: 'spring', stiffness: 200 }}
+            />
+            <motion.div
+              className="absolute inset-0 bg-gradient-to-t from-sky-500/30 to-transparent rounded-2xl"
+              animate={{ opacity: [0.5, 0.8, 0.5] }}
+              transition={{ repeat: Infinity, duration: 4 }}
+            />
+          </figure>
+        </motion.div>
+      </div>
+    </motion.section>
+  );
+};
 
-export default Hero
+export default Hero;
