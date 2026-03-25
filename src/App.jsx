@@ -11,7 +11,7 @@ import gsap from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
 
-gsap.registerPlugin(useGSAP , ScrollTrigger);
+gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 
 const App = () => {
@@ -21,29 +21,29 @@ const App = () => {
 
     elements.forEach((element) => {
       gsap.to(element, {
-        scrollTrigger:{
+        scrollTrigger: {
           trigger: element,
           scrub: true
         },
         y: 0,
         duration: 1,
         ease: 'power2.out',
-        opacity:1
+        opacity: 1
       })
     })
   })
   return (
     <ReactLenis root>
-   <Header/> 
-   <main>
-    <Hero/>
-    <About/>
-    <Skill/>
-    <Work/>
-    <Contact/>
-   </main>
-   <Footer/>
-   </ReactLenis>
+      <Header />
+      <main>
+        <Hero />
+        <About />
+        <Skill />
+        <Work />
+        <Contact />
+      </main>
+      <Footer />
+    </ReactLenis>
   )
 };
 

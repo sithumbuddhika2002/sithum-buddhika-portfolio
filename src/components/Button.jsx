@@ -11,15 +11,15 @@ const ButtonPrimary = ({
         return (
             <a href={href} target={target} className={"btn btn-primary " + classes}>
                 {label}
-                {icon ? 
+                {icon ?
                     <spam className="material-symbols-rounded" aria-hidden="true">
                         {icon}
-                </spam>
-                : underfined
+                    </spam>
+                    : underfined
                 }
-        </a>
+            </a>
         )
-    }else{
+    } else {
         return (
             <button className={"btn btn-primary " + classes}>
                 {label}
@@ -48,15 +48,15 @@ const ButtonOutline = ({
         return (
             <a href={href} target={target} className={"btn btn-outline " + classes}>
                 {label}
-                {icon ? 
+                {icon ?
                     <spam className="material-symbols-rounded" aria-hidden="true">
                         {icon}
-                </spam>
-                : underfined
+                    </spam>
+                    : underfined
                 }
-        </a>
+            </a>
         )
-    }else{
+    } else {
         return (
             <button className={"btn btn-outline " + classes}>
                 {label}
